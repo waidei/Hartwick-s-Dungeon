@@ -29,13 +29,21 @@ def create():
             print("You have selected Warrior!")
         elif character == 2:
             print("You have selected Sorcerer!")
+    play_game(character)
+
+
+def play_game(character):
+    print("You have entered your first dungeon!")
+    print("You are faced with a Goblin!")
+    print("If you are a Warrior, you must roll a number above 6 to survive..")
+    print("But if you are a Sorcerer, you must roll a number above 7 to survive..")
+    print("If your roll is less than the numbers required, you start all over!")
+    roll_1 = roll_dice()
+    if roll_1
 
 
 
-def play_game():
 
 
 
-
-
-
+create()
