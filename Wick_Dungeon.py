@@ -65,6 +65,4 @@ def play_game(character):
 
 
 
-
-
 create()
