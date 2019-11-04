@@ -60,6 +60,7 @@ def play_game(character):
             create()
         elif answer == "n":
             print("Thanks for playing!")
+        return
 
     print("You are now moving onto your second dungeon.")
     print("As you move closer to the dungeon, you feel and evil presence.")
@@ -90,6 +91,7 @@ def play_game(character):
             create()
         elif answer == "n":
             print("Thanks for playing!")
+        return
 
     print("You have reached your final dungeon.")
     print("As you get closer to the door, you start to feel heat that gets hotter and hotter.")
@@ -121,9 +123,7 @@ def play_game(character):
             create()
         elif answer == "n":
             print("Thanks for playing!")
-
-
-
+        return
 
 
 create()
