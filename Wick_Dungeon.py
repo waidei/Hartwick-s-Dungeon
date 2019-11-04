@@ -39,7 +39,28 @@ def play_game(character):
     print("But if you are a Sorcerer, you must roll a number above 7 to survive..")
     print("If your roll is less than the numbers required, you start all over!")
     roll_1 = roll_dice()
-    if roll_1
+    print(f"You rolled a {roll_1}.")
+    if character == 1 and roll_1 > 6:
+        print("You have survived! On to your next challenge!")
+    elif character == 1 and roll_1 < 6:
+        print("You have died! Would you like to try again?")
+        print("Please enter 'y' or 'n'.")
+        answer = input("> ")
+        if answer == "y":
+            create()
+        elif answer == "n":
+            print("Thanks for playing!")
+    if character == 2 and roll_1 > 7:
+        print("You have survived! On to your next challenge!")
+    elif character == 2 and roll_1 < 7:
+        print("You have died! Would you like to try again?")
+        print("Please enter 'y' or 'n'.")
+        answer = input("> ")
+        if answer == "y":
+            create()
+        elif answer == "n":
+            print("Thanks for playing!")
+
 
 
 
