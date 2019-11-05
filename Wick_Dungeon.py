@@ -63,17 +63,19 @@ def play_game(character):
         return
 
     print("You are now moving onto your second dungeon.")
-    print("As you move closer to the dungeon, you feel and evil presence.")
+    print("As you move closer to the dungeon, you feel an evil presence.")
     print("A witch comes at you with a fire ball spell!")
     print("If you are a Warrior, you must roll a 6 or higher to block the fire ball and slay the witch with your mighty sword.")
     print("If you roll a 5 or lower, you were not fast enough and was burnt to death.")
     print("If you are a Sorcerer, you have to roll a 7 or higher to dodge her spell and fire back with a powerful blizzard spell.")
     print("If you roll a 6 or lower, you were not fast enough and was burnt to death.")
-    roll_1 = roll_dice()
-    print(f"You rolled a {roll_1}.")
-    if character == 1 and roll_1 > 7:
+    print("Press any key to roll the dice!")
+    input("> ")
+    roll_2 = roll_dice()
+    print(f"You rolled a {roll_2}.")
+    if character == 1 and roll_2 > 7:
         print("You have survived! On to your next challenge!")
-    elif character == 1 and roll_1 < 7:
+    elif character == 1 and roll_2 < 7:
         print("You have died! Would you like to try again?")
         print("Please enter 'y' or 'n'.")
         answer = input("> ")
@@ -81,9 +83,9 @@ def play_game(character):
             create()
         elif answer == "n":
             print("Thanks for playing!")
-    if character == 2 and roll_1 > 6:
+    if character == 2 and roll_2 > 6:
         print("You have survived! On to your next challenge!")
-    elif character == 2 and roll_1 < 6:
+    elif character == 2 and roll_2 < 6:
         print("You have died! Would you like to try again?")
         print("Please enter 'y' or 'n'.")
         answer = input("> ")
@@ -101,11 +103,13 @@ def play_game(character):
     print("If you roll a 6 or lower, you did not catch yourself and fell into the lava and melted away.")
     print("If you are a Sorcerer, you must roll a 6 or higher to catch yourself and continue to the other side of the bridge to collect your reward.")
     print("If you roll a 5 or lower, you did not catch yourself and fell into the lava and melted away.")
-    roll_1 = roll_dice()
-    print(f"You rolled a {roll_1}.")
-    if character == 1 and roll_1 > 6:
+    print("Press any key to roll the dice!")
+    input("> ")
+    roll_3 = roll_dice()
+    print(f"You rolled a {roll_3}.")
+    if character == 1 and roll_3 > 6:
         print("You have survived! You open the door and get a life supply of gold coins!")
-    elif character == 1 and roll_1 < 6:
+    elif character == 1 and roll_3 < 6:
         print("You have died! Would you like to try again?")
         print("Please enter 'y' or 'n'.")
         answer = input("> ")
@@ -113,9 +117,9 @@ def play_game(character):
             create()
         elif answer == "n":
             print("Thanks for playing!")
-    if character == 2 and roll_1 > 6:
+    if character == 2 and roll_3 > 6:
         print("You have survived! You open the door and get a life supply of gold coins!")
-    elif character == 2 and roll_1 < 6:
+    elif character == 2 and roll_3 < 6:
         print("You have died! Would you like to try again?")
         print("Please enter 'y' or 'n'.")
         answer = input("> ")
